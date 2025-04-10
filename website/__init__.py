@@ -24,6 +24,9 @@ def create_app():
 
     DATABASE_URL = f"postgresql+psycopg2://{USER}:{PASSWORD}@{HOST}:{PORT}/{DBNAME}?sslmode=require"
 
+    app.config['SQLALCHEMY_DATABASE_URI'] = DATABASE_URL
+    app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
+
     engine = create_engine(DATABASE_URL, poolclass=NullPool)
 
     try:
