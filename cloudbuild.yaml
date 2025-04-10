@@ -1,0 +1,7 @@
+﻿steps:
+- name: 'gcr.io/cloud-builders/docker'
+  script: |
+    docker build -t asia-southeast1-docker.pkg.dev/gcpboleh-ai-test/my-flask-app-repo/flask-app:latest .
+  automapSubstitutions: true
+images:
+- 'asia-southeast1-docker.pkg.dev/gcpboleh-ai-test/my-flask-app-repo/flask-app:latest .'

@@ -1,0 +1,12 @@
+Dockerfile
+.dockerignore
+.git
+.gitignore
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+database.db # Don't copy the local SQLite DB
+*.sqlite3
+.env
