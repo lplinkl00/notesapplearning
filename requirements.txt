@@ -3,6 +3,7 @@ Flask-SQLAlchemy
 Flask-Login
 Werkzeug
 jsonify
+dotenv
 gunicorn  # Production WSGI server
 psycopg2-binary # Add this if using PostgreSQL (Cloud SQL)
 # Add any other direct dependencies you might have installed
